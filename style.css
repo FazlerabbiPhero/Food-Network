@@ -72,7 +72,7 @@ nav{
     padding-bottom: 2%;
 }
 .half-width p{
-    font-size: 20px;
+    font-size: 16px;
     color:black;
     padding-bottom: 8%;
 }
@@ -90,7 +90,7 @@ h1 span{
 }
 .anchor-button:hover{
     
-    box-shadow: 1px 1px 20px 1px #076585;
+    box-shadow: 1px 1px 20px 2px #076585;
 }
 .about-sec{
     background-image: url(images/shapes/7.png);
@@ -157,8 +157,8 @@ h1 span{
     display: flex;
     margin: 5%;
     margin-bottom: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7.3%;
+    margin-right: 7.3%;
     box-shadow:4px 4px 20px #076585 ;
     border-radius: 50px;
     transition: 0.5s;
