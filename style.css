@@ -2,10 +2,59 @@ body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding:0;
+    background-image: linear-gradient(#076585,#fff);
 }
-section{
-     height: 100vh;
-     padding-bottom: 50px;
+.header{
+    width: 100%;
+}
+nav img{
+    width: 100px;
+    margin-left: 50%;
+    padding-left: 44%;
+    padding-top: 2%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+.meno{
+    flex: 1;
+    text-align: right;
+    margin-right: 5%;
+    padding-right: 2%;
+    padding-top: 2%;
+}
+.meno ul li{
+    font-weight: 600;
+    list-style: none;
+    display: inline-block;
+    padding-top: 8px;
+    padding-left: 0;
+    padding-right: 40px;
+    position: relative;
+}
+.meno ul li a{
+    color: rgb(255, 94, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+.meno ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #abdbe3;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.meno ul li:hover::after{
+        width: 100%;
+}
+.flexible-container{
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 50px;
 }
 .half-width{
     width: 40%;
@@ -16,15 +65,16 @@ section{
 .half-width img{
     width: 100%;
 }
-h1{
+.half-width h1{
     padding-top: 100px;
-    font-size: 60px;
-    color: rgb(63, 63, 63);
+    font-size: 70px;
+    color: #eeeee4;
+    padding-bottom: 2%;
 }
 .half-width p{
     font-size: 20px;
-    color:rgb(63, 63, 63);
-    padding-bottom: 5%;
+    color:black;
+    padding-bottom: 8%;
 }
 h1 span{
     color: #f39c12;
@@ -32,81 +82,115 @@ h1 span{
 .anchor-button{
     text-decoration: none;
     border-radius: 50px;
-    box-shadow: ;
     padding: 10px 35px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: 600;
-    background-image: linear-gradient(#fd1d1d,#fcb045);
+    background-color: #abdbe3;
     transition: .5s;
 }
 .anchor-button:hover{
     
-    box-shadow: 1px 1px 20px 1px #ff9500;
+    box-shadow: 1px 1px 20px 1px #076585;
 }
-.about{
+.about-sec{
     background-image: url(images/shapes/7.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 10px;
+}
+.about-text{
+    padding-top: 5%;
+    text-align: right;
+}
+.about-text h1{
+        color:#076585;
 }
 #about-pic{
-    width: 50%;
-    padding-bottom: 0px;
+    width: 70%;
+    padding-top: 17.5%;
+    padding-left: 10%;
 }
 .recipe-sec{
     width: 100%;
-    margin: 5%;
     text-align: center;
     padding-top: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
+.recipe-sec h1{
+    font-size: 70px;
+    color: #076585;
+}   
 .recipe-row{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    padding-top: 2%;
+    padding-left: 7%;
+    padding-right: 7%;
     display: flex;
     justify-content: space-between;
 }
 
 .recipe{
     flex-basis: 31%;
-    border-radius: 20px;
+    border-radius: 30px;
     margin: 10px;
     text-align: justify;
-    background-color: rgb(253, 238, 238);
-    border: 10px solid rgb(253, 238, 238);
+    background-color: #abdbe3;
+    border: 10px solid #abdbe3;
+    box-shadow: 0 0 10px 2px #076585;
     padding: 10px;
     transition: 0.5s;
 }
 .recipe img{
     width: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
     
 }
 .recipe:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-.recipe p{
-    padding: 0;
+    box-shadow: 0 0 15px 2px white;
 }
 .recipe h3{
+    color: #076585;
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
 }
 .social{
-    width: 100%;
-}
-.fame{
-    display: inline-block;
-    padding: 10px;
-}
-.social-fam{
-    text-align: center;
-    background-color: rgb(180, 180, 180);
+    background-color: #abdbe3;
+    display: flex;
+    margin: 5%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow:4px 4px 20px #076585 ;
+    border-radius: 50px;
     transition: 0.5s;
 }
-.social-fam h1{
-    font-size: 40px;
-    padding: 0;
+.fame{
+    text-align: left;
+    padding-left: 11%;
+    padding-right: 11%;
 }
-
+.social h1{
+    color: #076585;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.social:hover{
+    box-shadow:4px 4px 20px white ;
+}
+.footer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #076585 ;
+}
+.footer h1{
+    font-size: 70px;
+    margin-bottom: 0;
+    padding: 20px 10px 0 0;
+}
+.footer p{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 100px;
+}
